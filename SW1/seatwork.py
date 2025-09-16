@@ -1,10 +1,12 @@
 def convert(usd):
-    indianRuppe = usd * 82.74
-    british = usd * 0.73
-    china = usd * 6.45
-    
-    return indianRuppe, british, china 
+    indianRuppe = usd * ind
+    british = usd * brt
+    china = usd * chn
 
+    return indianRuppe, british, china
+ind = 82.74
+brt = 0.73
+chn = 6.45
 
 
 
@@ -25,6 +27,6 @@ def main():
         print("\nDollar ($)\tIndian Rupee (R)\tBritish (Pound)\tChina (Y)")
         for usd in dollars:
             indianRuppe, british, china = convert(usd)
-            print(f"{usd:.2f}\t\t{indianRuppe:.2f}\t\t\t{british:.2f}\t\t\t{china:.2f}")
+            print(f"{usd:}\t\t{indianRuppe:.2f}\t\t\t{british:.2f}\t\t{china:.2f}")
         print()
 main()
